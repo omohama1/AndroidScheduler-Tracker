@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.c196application.CourseViewer"
+    tools:showIn="@layout/activity_course_viewer">
+
+
+    <TextView
+        android:id="@+id/courseTitleText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginEnd="186dp"
+        android:layout_marginRight="186dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/startDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/courseTitleText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/endDateText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/startDateText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:layout_alignRight="@+id/startDateText"
+        android:layout_alignEnd="@+id/startDateText"
+        android:textSize="18sp"/>
+
+    <TextView
+        android:id="@+id/courseStatusText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/endDateText"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignRight="@+id/endDateText"
+        android:layout_below="@+id/endDateText"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:textSize="18sp"/>
+    <ListView
+        android:id="@+id/mentorListView"
+        android:layout_width="match_parent"
+        android:layout_height="495dp"
+        android:layout_below="@+id/courseStatusText"
+        tools:layout_editor_absoluteY="8dp"
+        tools:layout_editor_absoluteX="8dp" />
+</RelativeLayout>

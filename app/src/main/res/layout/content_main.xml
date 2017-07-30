@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="?android:attr/colorBackground"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.c196application.MainActivity"
+    tools:menu="@android:color/holo_purple"
+    tools:showIn="@layout/activity_main">
+
+
+    <Button
+        android:id="@+id/term_button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="22dp"
+        android:background="@android:color/holo_purple"
+        android:onClick="openTermsActivity"
+        android:text="Terms"
+        tools:layout_editor_absoluteX="16dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <Button
+        android:id="@+id/course_button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/term_button"
+        android:layout_below="@id/term_button"
+        android:background="@android:color/holo_purple"
+        android:onClick="openCourseActivity"
+        android:text="Courses" />
+
+    <Button
+        android:id="@+id/assessment_button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/course_button"
+        android:layout_below="@id/course_button"
+        android:background="@android:color/holo_purple"
+        android:onClick="openAssessmentActivity"
+        android:text="Assessments" />
+
+    <Button
+        android:id="@+id/mentor_button"
+        android:layout_width="160dp"
+        android:layout_height="50dp"
+        android:layout_alignLeft="@id/assessment_button"
+        android:layout_below="@id/assessment_button"
+        android:background="@android:color/holo_purple"
+        android:onClick="openMentorActivity"
+        android:text="Mentors" />
+
+</RelativeLayout>

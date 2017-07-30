@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.c196application.TermViewer"
+    tools:showIn="@layout/activity_term_viewer">
+
+    <TextView
+        android:id="@+id/termView"
+        android:layout_width="300dp"
+        android:layout_height="189dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:text="TextView"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="38dp"
+        tools:layout_editor_absoluteY="38dp" />
+
+    <ListView
+        android:id="@+id/termCourseView"
+        android:layout_below="@+id/termView"
+        android:layout_width="312dp"
+        android:layout_height="242dp"
+        tools:layout_editor_absoluteY="240dp"
+        tools:layout_editor_absoluteX="29dp" />
+
+    <Button
+        android:id="@+id/delete_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/termCourseView"
+        android:layout_marginLeft="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="13dp"
+        android:onClick="deleteTerm"
+        android:text="Delete" />
+
+    <Button
+        android:id="@+id/add_course_to_term"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBottom="@+id/delete_button"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="39dp"
+        android:onClick="addCourseToTerm"
+        android:layout_marginRight="39dp"
+        android:text="Add Course" />
+</RelativeLayout>
