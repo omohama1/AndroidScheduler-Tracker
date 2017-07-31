@@ -7,27 +7,27 @@ import java.util.Date;
  */
 
 public class Term {
-    int termID;
-    String termTitle;
-    Date startDate;
-    Date endDate;
+    protected int termID;
+    protected String termTitle;
+    protected Date startDate;
+    protected Date endDate;
     Term(String title, Date start, Date end) {
         termTitle=title;
         startDate=start;
         endDate=end;
     }
 
-    public int getTermID(){
+    protected int getTermID(){
         return termID;
     }
-    public Date getStartDate(){
+    protected Date getStartDate(){
         return startDate;
 
     }
-    public Date getEndDate(){
+    protected  Date getEndDate(){
         return endDate;
     }
-    public String getTermTitle(){
+    protected String getTermTitle(){
         return termTitle;
     }
 }

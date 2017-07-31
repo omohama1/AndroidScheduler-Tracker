@@ -25,10 +25,10 @@ public class AssessmentActivity extends AppCompatActivity implements LoaderManag
     private static final int DB_VERSION=DBOpenHelper.DATABASE_VERSION;
     private static final int BACK_TO_COURSE_CODE = 5003 ;
     private ArrayList<String> assessments;
-    DBOpenHelper dbHelper;
-    ListView assessmentList;
-    String courseID;
-    Uri uri;
+    private DBOpenHelper dbHelper;
+    private ListView assessmentList;
+    private String courseID;
+    private Uri uri;
 
     private AssessmentCursorAdapter assessmentAdapter;
 

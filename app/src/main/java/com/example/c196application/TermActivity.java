@@ -24,11 +24,11 @@ public class TermActivity extends AppCompatActivity implements LoaderManager.Loa
     private static final int ADD_TERM_REQUEST_CODE = 2001;
     private static final int VIEWER_REQUEST_CODE = 2002 ;
     private ArrayList<String> terms;
-    DBOpenHelper dbHelper;
-    ListView termList;
+    private DBOpenHelper dbHelper;
+    private ListView termList;
     private TermCursorAdapter termAdapter;
-    SQLiteDatabase db;
-    Uri uri;
+    private SQLiteDatabase db;
+    private Uri uri;
 
 
     @Override

@@ -9,15 +9,15 @@ import java.util.Date;
  */
 
 public class Course {
-    String title;
-    int mentorID;
-    String notes;
-    String status;
-    Date endDate;
-    Date startDate;
-    int courseID;
-    int termID;
-    int alert;
+    protected String title;
+    protected int mentorID;
+    protected String notes;
+    protected String status;
+    protected Date endDate;
+    protected Date startDate;
+    protected int courseID;
+    protected int termID;
+    protected int alert;
 
     Course(String titleStr,  String statusStr, Date start,Date end, int term,int alertStatus){
         title=titleStr;
@@ -43,35 +43,35 @@ public class Course {
     }
     protected void setCourseID(int id){ this.courseID=id;}
 
-    public String getCourseTitle() {
+    protected String getCourseTitle() {
         return title;
     }
 
-    public Date getStartDate() {
+    protected Date getStartDate() {
         return startDate;
     }
 
-    public Date getEndDate() {
+    protected Date getEndDate() {
         return endDate;
     }
 
-    public int getTermID() {
+    protected int getTermID() {
         return termID;
     }
 
-    public String getStatus() {
+    protected String getStatus() {
         return status;
     }
 
-    public int getMentor() {
+    protected int getMentor() {
         return mentorID;
     }
-    public int getCourseID(){
+    protected int getCourseID(){
         return courseID;
     }
 
 
-    public int getAlert() {
+    protected int getAlert() {
         return alert;
     }
 }

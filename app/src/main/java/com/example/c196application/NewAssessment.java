@@ -26,7 +26,7 @@ import java.util.List;
 public class NewAssessment extends AppCompatActivity {
 
     private static final int ASSESS_DIALOG_ID =5010 ;
-    DBOpenHelper dbHelper;
+    private DBOpenHelper dbHelper;
     SQLiteDatabase db;
     Spinner courseSpinner;
     int testYear;

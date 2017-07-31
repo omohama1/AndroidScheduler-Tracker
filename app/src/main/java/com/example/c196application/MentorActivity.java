@@ -22,8 +22,8 @@ public class MentorActivity extends AppCompatActivity implements LoaderManager.L
     private static final int VIEWER_REQUEST_CODE = 4002 ;
 
     private ArrayList<String> mentors;
-    DBOpenHelper dbHelper;
-    ListView mentorList;
+    private DBOpenHelper dbHelper;
+    private ListView mentorList;
     private MentorCursorAdapter mentorAdapter;
 
     @Override

@@ -27,15 +27,15 @@ import java.util.GregorianCalendar;
 
 public class MainActivity extends AppCompatActivity {
 
-    AlertDialog assessAlert;
-    NotificationCompat.Builder notification;
+    private  AlertDialog assessAlert;
+    private NotificationCompat.Builder notification;
     private static final int TERMS_REQUEST_CODE = 1001;
     private static final int COURSE_REQUEST_CODE = 1002;
     private static final int MENTOR_REQUEST_CODE = 1003;
     private static final int ASSESSMENT_REQUEST_CODE = 1004;
     private static final int NOTIFICATION_ID = 1337;
-    DBOpenHelper dbHelper;
-    SQLiteDatabase db;
+    private DBOpenHelper dbHelper;
+    private SQLiteDatabase db;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

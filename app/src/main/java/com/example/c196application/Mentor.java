@@ -5,10 +5,10 @@ package com.example.c196application;
  */
 
 public class Mentor {
-    String mentorName;
-    String phoneNumber;
-    String emailAdddress;
-    int mentorID;
+   protected String mentorName;
+    protected String phoneNumber;
+    protected String emailAdddress;
+    protected int mentorID;
 
     Mentor(String name, String phone, String email)
     {
@@ -17,16 +17,16 @@ public class Mentor {
         emailAdddress=email;
 
     }
-    public String getMentorName(){
+    protected String getMentorName(){
         return mentorName;
     }
-    public String getPhoneNumber(){
+    protected String getPhoneNumber(){
         return phoneNumber;
     }
-    public String getEmailAdddress(){
+    protected String getEmailAdddress(){
         return emailAdddress;
     }
-    public int getMentorID()
+    protected int getMentorID()
     {
         return mentorID;
     }

@@ -36,17 +36,17 @@ public class CourseViewer extends AppCompatActivity implements LoaderManager.Loa
     private static final int NOTES_REQUEST_CODE =4004 ;
     private static final int EDITOR_REQUEST_CODE =4005 ;
     private static final int ASSESSMENT_REQUEST_CODE =4006 ;
-    TextView courseText;
-    TextView statusText;
-    TextView startText;
-    TextView endText;
-    String action;
-    String courseFilter;
-    Uri uri;
-    DBOpenHelper dbHelper;
-    ArrayList<String> mentors;
-    ListView mentorList;
-    MentorCursorAdapter mentorAdapter;
+    private  TextView courseText;
+    private TextView statusText;
+    private TextView startText;
+    private TextView endText;
+    private String action;
+    private String courseFilter;
+    private Uri uri;
+    private DBOpenHelper dbHelper;
+    private ArrayList<String> mentors;
+    private ListView mentorList;
+    private MentorCursorAdapter mentorAdapter;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

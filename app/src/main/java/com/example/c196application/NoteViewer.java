@@ -40,19 +40,19 @@ import java.util.Locale;
 public class NoteViewer extends AppCompatActivity {
 
     private static final String APP_TAG = "C196Application";
-    String action;
-    EditText editor;
-    String noteFilter;
-    String oldText;
-    Uri takenPhotoUri;
-    ImageView imageView;
-    Bitmap image;
-    byte[] imageByte;
-    Uri uri;
-    String photoFileName;
-    String courseID;
+    private String action;
+    private EditText editor;
+    private String noteFilter;
+    private String oldText;
+    private Uri takenPhotoUri;
+    private ImageView imageView;
+    private Bitmap image;
+    private byte[] imageByte;
+    private Uri uri;
+    private String photoFileName;
+    private String courseID;
     private ShareActionProvider mSAP;
-    File photo;
+    private File photo;
     public final static int CAPTURE_PHOTO_REQUEST_CODE = 7001;
 
 

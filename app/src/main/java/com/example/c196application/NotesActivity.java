@@ -25,13 +25,13 @@ public class NotesActivity extends AppCompatActivity implements LoaderManager.Lo
     private static final int EDITOR_REQUEST_CODE = 6001;
     private static final int ADD_NOTE_REQUEST_CODE = 6002;
     private static final int BACK_TO_COURSE_CODE =6003 ;
-    ListView noteList;
+    private ListView noteList;
     private NotesCursorAdapter noteAdapter;
-    ArrayList<String> notes;
-    DBOpenHelper dbHelper;
-    SQLiteDatabase db;
-    String courseID;
-    Uri uri;
+    private ArrayList<String> notes;
+    private DBOpenHelper dbHelper;
+    private SQLiteDatabase db;
+    private String courseID;
+    private Uri uri;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

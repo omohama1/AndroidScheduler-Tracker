@@ -34,14 +34,14 @@ public class TermViewer extends AppCompatActivity implements LoaderManager.Loade
     private String action;
     private String termFilter;
     private TextView termText;
-    ListView courseList;
-    CourseCursorAdapter courseAdapter;
+    private ListView courseList;
+    private CourseCursorAdapter courseAdapter;
 
-    ArrayList<String> courses;
-    DBOpenHelper dbHelper;
-    SQLiteDatabase db;
-    Uri uri;
-    int termID;
+    private ArrayList<String> courses;
+    private DBOpenHelper dbHelper;
+    private SQLiteDatabase db;
+    private Uri uri;
+    private int termID;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

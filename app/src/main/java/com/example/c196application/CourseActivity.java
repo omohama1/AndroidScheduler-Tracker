@@ -25,8 +25,8 @@ public class CourseActivity extends AppCompatActivity implements LoaderManager.L
     private static final int VIEWER_REQUEST_CODE = 3002;
     private static final int DB_VERSION =DBOpenHelper.DATABASE_VERSION ;
     private ArrayList<String> courses;
-    DBOpenHelper dbHelper;
-    ListView courseList;
+    private DBOpenHelper dbHelper;
+    private ListView courseList;
     private CourseCursorAdapter courseAdapter;
 
     @Override

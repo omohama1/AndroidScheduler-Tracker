@@ -23,21 +23,21 @@ import java.util.Date;
 public class NewTerm extends AppCompatActivity {
 
     private static final int END_DIALOG_ID = 2002;
-    Button startDateButton;
-    Button endDateButton;
-    int startYear;
-    int startMonth;
-    int startDay;
-    int endYear;
-    int endMonth;
-    int endDay;
-    String title;
-    EditText startDate;
-    EditText endDate;
-    EditText termTitle;
-    Date start;
-    Date end;
-    DBOpenHelper dbHelper;
+    private  Button startDateButton;
+    private Button endDateButton;
+    private int startYear;
+    private int startMonth;
+    private int startDay;
+    private int endYear;
+    private int endMonth;
+    private int endDay;
+    private String title;
+    private EditText startDate;
+    private EditText endDate;
+    private EditText termTitle;
+    private Date start;
+    private Date end;
+    private DBOpenHelper dbHelper;
     private static final int START_DIALOG_ID = 2001;
 
     @Override

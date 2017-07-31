@@ -20,7 +20,7 @@ public class AssessmentViewer extends AppCompatActivity {
     private String action;
     private String assessmentFilter;
     private TextView assessmentView;
-    Uri uri;
+    private Uri uri;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

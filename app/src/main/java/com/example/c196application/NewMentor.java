@@ -14,10 +14,10 @@ import android.widget.Toast;
 import java.util.Date;
 
 public class NewMentor extends AppCompatActivity {
-    EditText nameText;
-    EditText phoneText;
-    EditText emailText;
-    DBOpenHelper dbHelper;
+    private EditText nameText;
+    private EditText phoneText;
+    private EditText emailText;
+    private DBOpenHelper dbHelper;
 
 
     @Override

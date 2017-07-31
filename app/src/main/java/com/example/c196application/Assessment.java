@@ -12,12 +12,12 @@ an assessment into the SQLite Database
  */
 public class Assessment {
 
-    String assessmentTitle;
-    String assessmentType;
-    Date assessmentDate;
-    int assessmentCourseID;
-    int assessmentID;
-    int alert;
+    protected String assessmentTitle;
+    protected String assessmentType;
+    protected Date assessmentDate;
+    protected int assessmentCourseID;
+    protected int assessmentID;
+    protected int alert;
 
     Assessment(String title, String type, Date date, int course,int alertStatus){
         assessmentTitle = title;
